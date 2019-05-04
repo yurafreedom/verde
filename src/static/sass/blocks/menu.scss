@@ -1,0 +1,134 @@
+.menu-block {
+	&__heading {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #fff;
+		text-transform: uppercase;
+		padding-top: 55px;
+		padding-bottom: 60px;
+		background-color: #3e4941;
+	}
+	&__heading span {
+		font-weight: 500;
+		font-size: 20px;
+		letter-spacing: 2.5px;
+		padding-bottom: 40px;
+	}
+	&__heading h2 {
+		font-size: 72px;
+		font-weight: 100;
+		font-family: 'Playfair Display', 'Roboto', sans-serif;
+		padding-bottom: 40px;
+	}
+	&__heading p {
+		display: block;
+		text-align: center;
+		width: 780px;
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 1.5;
+	}
+	&__photo-block {
+		position: relative;
+		width: 100%;
+		height: 300px;
+	}
+	&__photo-block img {
+		width: 100%;
+		height: 100%;
+		display: block;
+		object-fit: cover;
+		backface-visibility: hidden;
+	}
+	&__photo-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.5);
+	}
+	&__breakfast-block {
+		background-color: #fff;
+		padding-top: 180px;
+	}
+	&__breakfast-heading {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 100px;
+	}
+	&__breakfast-title h2 {
+		display: block;
+		text-align: center;
+		font-family: 'Playfair Display', 'Roboto', sans-serif;
+		font-size: 42px;
+		color: #000;
+		font-weight: 400;
+		line-height: 1.23;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+	}
+	&__breakfast-type span {
+		display: block;
+		text-align: center;
+		font-family: 'Georgia', 'Roboto', sans-serif;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 1.5;
+		color: #000;
+		small {
+			font-size: 14px;
+			line-height: 1.5;
+			font-weight: 400;
+			font-style: italic;
+		}
+	}
+	&__breakfast-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	&__breakfast-card {
+		display: flex;
+		flex-direction: column;
+		width: 260px;
+		margin-bottom: 70px;
+		&:not(:nth-child(4n)) {
+			margin-right: 40px;
+		}
+	}
+	&__breakfast-card h3 {
+		position: relative;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1;
+		color: #000;
+		padding-bottom: 14px;
+		margin-bottom: 14px;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: #000;
+		}
+		span {
+			font-size: 14px;
+			font-style: italic;
+			font-weight: 400;
+			line-height: 1.17;
+			color: #000;
+		}
+	}
+	&__breakfast-card span {
+		font-weight: 100;
+		font-size: 16px;
+		line-height: 1;
+		color: #000;
+	}
+
+}
