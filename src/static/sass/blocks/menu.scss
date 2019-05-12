@@ -180,4 +180,8 @@
 		object-fit: cover;
 		backface-visibility: hidden;
 	}
+	&__slider-one.active, &__slider-two.active {
+		opacity: 1;
+		pointer-events: all;
+	}
 }
