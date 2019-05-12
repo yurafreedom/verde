@@ -36,6 +36,17 @@ var w2 = $("div", block).innerWidth();
 $(block).remove();
 scrollbarWidth = (w1 - w2);
 
+$('.desserts-block__slider-one').on('click', function (evt) {
+  openModal('.popup-dessert');
+});
+
+$('.desserts-block__slider-two').on('click', function (evt) {
+  openModal('.popup-catering');
+});
+
+$('.popup-block__close').on('click', function (evt) {
+  closeModals('#popup');
+});
 
 $("#menu-toggle").click(function(e) {
   e.preventDefault();
@@ -74,6 +85,28 @@ $('.promo-block__slider').slick({
   nextArrow: '<button class="next promo-block__arrow"></button>',
 });
 
+$('.popup-block__dessert-slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  dots: true,
+  variableWidth: 1,
+  prevArrow: '<button class="prev dessert-block__arrow"></button>',
+  nextArrow: '<button class="next dessert-block__arrow"></button>',
+});
+
+
+$('.popup-block__catering-slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  dots: true,
+  variableWidth: 1,
+  prevArrow: '<button class="prev catering-block__arrow"></button>',
+  nextArrow: '<button class="next catering-block__arrow"></button>',
+});
 
 wow = new WOW(
   {

@@ -23,8 +23,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-top: 60px;
-	padding-bottom: 60px;
 	position: relative;
 	width: 100%;
 	min-height: 100%;
@@ -38,13 +36,12 @@
 	background-color: #fff;
 	animation-name: bounce;
 	animation-duration: 1.4s;
-	width: 505px;
-	height: auto;
+	width: 100%;
+	height: 100vh;
 }
 
 .popup-block__popup .inner__content {
 	height: auto;
-	padding: 85px 104px 51px 56px;
 }
 
 .popup-block__close {
@@ -82,9 +79,19 @@
 .popup-block__row {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-start;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
+	height: 100vh;
+}
+
+.popup-block__dessert-slider, .popup-block__catering-slider {
+	width: 100%;
+}
+
+.popup-block__dessert-photo, .popup-block__catering-photo {
+	width: 462px;
+	height: 577px;
 }
 
 @media screen and (max-width: 767px) {

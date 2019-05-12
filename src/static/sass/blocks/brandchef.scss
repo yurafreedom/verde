@@ -9,10 +9,10 @@
 		padding-bottom: 50px;
 	}
 	&__heading h3 {
+		font-family: "Playfair Display", sans-serif;
 		font-size: 46px;
 		line-height: 72px;
-		font-family: 'Playfair Display', 'Roboto', sans-serif;
-		font-weight: 100;
+		font-weight: 700;
 		color: #000;
 		padding-bottom: 50px;
 	}
@@ -56,7 +56,7 @@
 	&__content h3 {
 		position: relative;
 		display: block;
-		font-family: 'Georgia', 'Roboto', sans-serif;
+		font-family: 'Georgia', sans-serif;
 		font-weight: 400;
 		font-size: 24px;
 		color: #000;

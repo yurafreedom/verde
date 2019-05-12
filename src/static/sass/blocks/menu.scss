@@ -51,13 +51,13 @@
 	}
 	&__breakfast-block {
 		background-color: #fff;
-		padding-top: 180px;
+		padding-top: 60px;
 	}
-	&__breakfast-heading {
+	&__breakfast-heading, &__salads-heading, &__snacks-heading, &__rolls-heading, &__soups-heading, &__dishes-heading, &__desserts-heading {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-bottom: 100px;
+		margin-bottom: 60px;
 	}
 	&__breakfast-title h2 {
 		display: block;
@@ -85,12 +85,20 @@
 			font-style: italic;
 		}
 	}
-	&__breakfast-list {
+	&__breakfast-list, &__salads-list, &__rolls-list, &__soups-list, &__dishes-list, &__desserts-list {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
-	&__breakfast-card {
+	&__salads-heading h2, &__snacks-heading h2, &__rolls-heading h2, &__soups-heading h2, &__dishes-heading h2, &__desserts-heading h2 {
+		display: block;
+		text-align: center;
+		font-family: 'Georgia', 'Roboto', sans-serif;
+		font-size: 24px;
+		font-weight: 400;
+		color: #000;
+	}
+	&__breakfast-card, &__salads-card, &__snacks-card, &__rolls-card, &__soups-card, &__dishes-card, &__desserts-card {
 		display: flex;
 		flex-direction: column;
 		width: 260px;
@@ -99,7 +107,7 @@
 			margin-right: 40px;
 		}
 	}
-	&__breakfast-card h3 {
+	&__breakfast-card h3, &__salads-card h3, &__snacks-card h3, &__rolls-card h3, &__soups-card h3, &__dishes-card h3, &__desserts-card h3 {
 		position: relative;
 		font-weight: 400;
 		font-size: 18px;
@@ -124,11 +132,52 @@
 			color: #000;
 		}
 	}
-	&__breakfast-card span {
+	&__breakfast-card span, &__salads-card span, &__snacks-card span, &__rolls-card span, &__soups-card span, &__dishes-card span, &__desserts-card span {
 		font-weight: 100;
 		font-size: 16px;
 		line-height: 1;
 		color: #000;
 	}
+	&__breakfast-row, &__salads-row, &__snacks-row, &__rolls-row, &__soups-row, &__dishes-row, &__desserts-row {
+		display: flex;
+		flex-direction: row;
+	}
+	&__salads-block, &__rolls-block, &__dishes-block {
+		background-color: #fbf0eb;
+	}
+	&__salads-block, &__snacks-block, &__rolls-block, &__soups-block, &__dishes-block, &__desserts-block {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}
 
+.desserts-block {
+	&__gallery-block {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 60px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		margin-bottom: 120px;
+	}
+	&__photo-block {
+		position: relative;
+		width: 580px;
+		height: 580px;
+		cursor: zoom-out;
+	}
+	&__left-part, &__right-part {
+		position: relative;
+	}
+	&__right-part {
+		top: 60px;
+	}
+	&__photo-block img {
+		width: 100%;
+		height: 100%;
+		display: block;
+		object-fit: cover;
+		backface-visibility: hidden;
+	}
 }
