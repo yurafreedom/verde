@@ -52,11 +52,11 @@
 
 .popup-block__close {
 	position: absolute;
-	top: 27px;
-	right: 27px;
+	top: 10px;
+	right: 12px;
 	display: block;
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 	cursor: pointer;
 }
 
@@ -90,6 +90,10 @@
 	align-items: center;
 	width: 100%;
 	height: 100vh;
+}
+
+.popup-block__dessert-slider, .popup-block__catering-slider {
+	width: 100%;
 }
 
 .popup-block__dessert-photo {
@@ -160,10 +164,10 @@
 }
 
 .popup-block__arrow.prev {
-	left: -30px;
+	left: 20px;
 }
 .popup-block__arrow.next {
-	right: -20px;
+	right: 20px;
 	transform: rotate(180deg);
 }
 
