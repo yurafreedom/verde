@@ -88,6 +88,10 @@ $('.popup-block__close').on('click', function() {
   $('#popup-dessert').removeClass('active');
 });
 
+$('.popup-block__close').on('click', function() {
+  $('#popup-catering').removeClass('active');
+});
+
 $("#menu-toggle.active").click(function(e) {
   e.preventDefault();
   $("#header-menu").removeClass("active");
