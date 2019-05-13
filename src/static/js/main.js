@@ -85,7 +85,7 @@ $('.desserts-block__slider-two').on('click', function() {
 });
 
 $('.popup-block__close').on('click', function() {
-  $('.popup-block').removeClass('active');
+  $('#popup-dessert').removeClass('active');
 });
 
 $("#menu-toggle.active").click(function(e) {
@@ -124,10 +124,8 @@ $('.popup-block__dessert-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
-  dots: true,
-  variableWidth: 1,
-  prevArrow: '<button class="prev dessert-block__arrow"></button>',
-  nextArrow: '<button class="next dessert-block__arrow"></button>',
+  prevArrow: '<button class="prev popup-block__arrow"></button>',
+  nextArrow: '<button class="next popup-block__arrow"></button>',
 });
 
 
@@ -136,10 +134,8 @@ $('.popup-block__catering-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
-  dots: true,
-  variableWidth: 1,
-  prevArrow: '<button class="prev catering-block__arrow"></button>',
-  nextArrow: '<button class="next catering-block__arrow"></button>',
+  prevArrow: '<button class="prev popup-block__arrow"></button>',
+  nextArrow: '<button class="next popup-block__arrow"></button>',
 });
 
 wow = new WOW(
