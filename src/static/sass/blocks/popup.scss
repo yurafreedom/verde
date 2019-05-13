@@ -58,6 +58,7 @@
 	width: 30px;
 	height: 30px;
 	cursor: pointer;
+	z-index: 90;
 }
 
 .popup-block__close::after, .popup-block__close::before {
@@ -96,7 +97,7 @@
 	width: 100%;
 }
 
-.popup-block__dessert-photo {
+.popup-block__dessert-photo, .popup-block__catering-photo {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -117,6 +118,7 @@
 	z-index: 90;
 	border: 0;
 	background-color: #fff;
+	outline: 0;
 }
 
 .popup-block__arrow.prev::before {

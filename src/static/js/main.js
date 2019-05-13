@@ -81,7 +81,7 @@ $('.desserts-block__slider-one').on('click', function() {
 });
 
 $('.desserts-block__slider-two').on('click', function() {
-  $('#popup-careting').toggleClass('active');
+  $('#popup-catering').toggleClass('active');
 });
 
 $('.popup-block__close').on('click', function() {
