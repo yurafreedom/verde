@@ -80,6 +80,9 @@ html(lang="ru-RU")
 				.inner__menu
 					a.page-header__toggle.close-button#menu-close(href="#" data-toggle="dismiss")
 						span
+					.page-header__logo
+						a(href="index.html")
+							img(src="static/img/logo.png", alt="")
 					nav.page-header__nav
 						ul.page__list
 								li
@@ -96,6 +99,21 @@ html(lang="ru-RU")
 									a(href="#") Доставка/Кейтеринг
 								li 
 									a(href="#") Контакты
+						.page-header__socials
+							ul.page-list
+								li
+									a(href="#")
+										svg.icon--facebook(width="20" height="20")
+											use(xlink:href="#facebook")
+								li
+									a(href="#")
+										svg.icon--instagram(width="20" height="20")
+											use(xlink:href="#instagram")
+						.page-header__address
+							span Кутузовский проспект, 36 стр.4
+							span Пн-вс: 10:00-21:00
+						.page-header__call
+							a(href="tel:+74993509644") +7 (499) 350–96–44
 		.main-page-wrap
 			.main-page-blocks
 				section.promo-block
