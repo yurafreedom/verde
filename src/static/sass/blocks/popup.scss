@@ -57,7 +57,6 @@
 	display: block;
 	width: 30px;
 	height: 30px;
-	cursor: pointer;
 	z-index: 90;
 }
 
@@ -93,21 +92,26 @@
 	height: 100vh;
 }
 
-.popup-block__dessert-slider, .popup-block__catering-slider {
+.popup-block__dessert-slider, .popup-block__raw-slider, .popup-block__delivery-slider, .popup-block__catering-slider {
 	width: 100%;
 }
 
-.popup-block__dessert-photo, .popup-block__catering-photo {
+.popup-block__dessert-photo, .popup-block__raw-photo, .popup-block__delivery-photo, .popup-block__catering-photo {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.popup-block__dessert-photo img, .popup-block__catering-photo img {
+.popup-block__dessert-photo img, .popup-block__raw-photo img {
 	width: 462px;
 	height: 577px;
+	object-fit: cover;
 }
 
+.popup-block__delivery-slider img, .popup-block__catering-slider img {
+	height: 577px;
+	object-fit: cover;
+}
 
 .popup-block__arrow.prev, .popup-block__arrow.next {
 	content: '';
@@ -119,6 +123,7 @@
 	border: 0;
 	background-color: #fff;
 	outline: 0;
+	cursor: pointer;
 }
 
 .popup-block__arrow.prev::before {

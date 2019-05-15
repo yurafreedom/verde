@@ -73,6 +73,10 @@ body {
 	background-color: #939598;
 	border-radius: 50%;
 	padding: 5px;
+	transition: all .3s ease-in-out;
+	&:hover {
+		background-color: #000;
+	}
 }
 
 .icon--facebook, .icon--instagram {
@@ -113,6 +117,11 @@ body {
 	height: 40px;
 	font-size: 14px;
 	font-weight: 400;
+	transition: all .3s ease-in-out;
+	&:hover, &:active {
+		background-color: darken(#bdd9e3, 10%);
+		color: lighten(#304c56, 10%);
+	}
 }
 
 .page-header__bottom-row {
@@ -142,8 +151,7 @@ body {
 
 .page-header__nav a:hover,
 .page-header__nav a:active {
-	transition: all .3s ease-in-out;
-	color: #FEE98F;
+	color: #939598;
 }
 
 .page-header__toggle {
@@ -342,7 +350,9 @@ body {
 
 @media (min-width: 1200px) {
 	.wrapper {
-		width: 1200px;
+		width: 1170px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	.page-header__menu {
 		padding: 28px 0 100px;

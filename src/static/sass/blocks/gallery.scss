@@ -1,0 +1,22 @@
+.gallery-block {
+	&__fancy-block {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	&__fancy-block a {
+		display: flex;
+		width: 25%;
+		transition: transform 0.15s linear;
+		&:hover {
+			transform: scale(1.02);
+			box-shadow: 0 2px 20px 2px rgba(0,0,0,.45);
+		}
+	}
+	&__fancy-block a img {
+		width: 100%;
+		height: 270px;
+		object-fit: cover;
+		backface-visibility: hidden;
+	}
+}

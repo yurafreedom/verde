@@ -2,8 +2,10 @@
 @import "slick-theme.scss";
 @import "swiper.min.scss";
 @import "animate.scss";
+@import "fancybox.min.scss";
 @import "_normalize.scss";
 @import "_base.scss";
+@import "blocks/plugins.scss";
 @import "blocks/fonts.scss";
 @import "blocks/button.scss";
 @import "blocks/input.scss";
@@ -12,6 +14,9 @@
 @import "blocks/about.scss";
 @import "blocks/brandchef.scss";
 @import "blocks/menu.scss";
+@import "blocks/gallery.scss";
+@import "blocks/delivery.scss";
+@import "blocks/catering.scss";
 @import "blocks/footer.scss";
 @import "blocks/popup.scss";
 

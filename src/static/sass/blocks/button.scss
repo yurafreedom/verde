@@ -10,3 +10,23 @@
 	cursor: pointer;
 	transition: all .3s ease-in-out;
 }
+
+.btn--delivery {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: #304c56;
+	background-color: #bdd9e3;
+	width: 196px;
+	line-height: 60px;
+	border-radius: 30px;
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+	&:hover {
+		background-color: darken(#bdd9e3, 15%);
+		color: lighten(#304c56, 15%);
+	}
+}

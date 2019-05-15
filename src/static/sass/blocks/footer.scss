@@ -1,0 +1,104 @@
+.main-footer {
+	&__contacts-block {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+	&__map-block {
+		width: 50%;
+		height: 100%;
+	}
+	&__info-block {
+		width: 50%;
+		background-color: #3e4941;
+		padding: 100px 60px;
+	}
+	&__info-name {
+		display: block;
+		font-family: "Playfair Display", sans-serif;
+		font-size: 42px;
+		line-height: 1.45;
+		color: #fff;
+		margin-bottom: 40px;
+	}
+	&__info-address, &__info-tel, &__tel-link {
+		display: block;
+		margin: 0;
+		font-size: 26px;
+		line-height: 1.45;
+		font-weight: 300;
+		color: #fff;
+	}
+	&__info-tel {
+		margin-bottom: 40px;
+	}
+	&__info-mail {
+		display: block;
+		font-size: 26px;
+		line-height: 1.45;
+		font-weight: 300;
+		color: #ff8562;
+		text-decoration: underline;
+		margin-bottom: 40px;
+	}
+	&__info-time {
+		font-size: 18px;
+		line-height: 1.55;
+		font-weight: 300;
+		color: #fff;
+	}
+	&__tel-link {
+		display: inline-block;
+	}
+	&__bottom-block {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 40px;
+	}
+	&__bottom-block span {
+		font-size: 14px;
+		line-height: 1.35;
+		color: #000;
+		font-weight: 600;
+	}
+	&__social-list li {
+		width: 30px;
+		height: 30px;
+	}
+	&__social-list li:not(:last-child) {
+		margin-right: 10px;
+	}	
+	&__social-list li a {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		background-color: #000;
+		padding: 5px;
+		transition: all .3s ease-in-out;
+		&:hover, &:active {
+			background-color: #939598;
+		}
+	}
+	&__back-link {
+		position: relative;
+		padding-right: 12px;
+		font-size: 14px;
+		color: #000;
+		line-height: 1.35;
+		font-weight: 600;
+		text-decoration: underline;
+		transition: all .3s ease-in-out;
+		&:hover, &:active {
+			color: #939598;
+		}
+	}
+	&__back-link .icon--top {
+		position: absolute;
+		top: 4px;
+		right: 0;
+	}
+}

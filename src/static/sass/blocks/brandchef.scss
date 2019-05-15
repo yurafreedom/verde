@@ -81,3 +81,18 @@
 		color: #000;
 	}
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.brandchef-block {
+		&__heading p {
+			width: 100%;
+			font-size: 18px;
+		}
+		&__photo-block {
+			width: 340px;
+		}
+		&__content {
+			width: 350px;
+		}
+	}
+}
