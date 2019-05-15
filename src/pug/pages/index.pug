@@ -63,42 +63,36 @@ html(lang="ru-RU")
 						nav.page-header__nav
 							ul.page-list
 								li
-									a(href="#") О нас
+									a(href="#about" data-toggle="anchor") О нас
 								li
-									a(href="#") Бренд-шеф
+									a(href="#brandchef" data-toggle="anchor") Бренд-шеф
 								li
-									a(href="#") Меню
+									a(href="#menu" data-toggle="anchor") Меню
 								li
-									a(href="#") Галерея
-								li
-									a(href="#") Новости
+									a(href="#gallery" data-toggle="anchor") Галерея
 								li 
-									a(href="#") Доставка/Кейтеринг
+									a(href="#delivery" data-toggle="anchor") Доставка/Кейтеринг
 								li 
-									a(href="#") Контакты
+									a(href="#contacts" data-toggle="anchor") Контакты
 			.page-header__menu.popup-block#header-menu
 				.inner__menu
-					a.page-header__toggle.close-button#menu-close(href="#" data-toggle="dismiss")
-						span
 					.page-header__logo
 						a(href="index.html")
 							img(src="static/img/logo.png", alt="")
 					nav.page-header__nav
-						ul.page__list
+						ul.page-list
 								li
-									a(href="#") О нас
+									a(href="#about" data-target="#about" data-toggle="anchor") О нас
 								li
-									a(href="#") Бренд-шеф
+									a(href="#brandchef" data-target="#brandchef" data-toggle="anchor") Бренд-шеф
 								li
-									a(href="#") Меню
+									a(href="#menu" data-target="#menu" data-toggle="anchor") Меню
 								li
-									a(href="#") Галерея
-								li
-									a(href="#") Новости
+									a(href="#gallery" data-target="#gallery" data-toggle="anchor") Галерея
 								li 
-									a(href="#") Доставка/Кейтеринг
+									a(href="#delivery" data-target="#delivery" data-toggle="anchor") Доставка/Кейтеринг
 								li 
-									a(href="#") Контакты
+									a(href="#contacts" data-target="#contacts" data-toggle="anchor") Контакты
 						.page-header__socials
 							ul.page-list
 								li
@@ -125,10 +119,8 @@ html(lang="ru-RU")
 									.promo-block__photo-overlay
 								.promo-block__slider-body
 									span Verde café
-									h2 RAW VEGAN
-									p Кулинарное искусство, максимальная польза продуктов 
-										br
-										| в каждой тарелке и приятная атмосфера.
+									h2 RAW & VEGAN
+									p Кулинарное искусство, максимальная польза продуктов в каждой тарелке и приятная атмосфера.
 						.promo-block__slide
 							.promo-block__slider-wrapper
 								.promo-block__slider-photo
@@ -136,10 +128,8 @@ html(lang="ru-RU")
 									.promo-block__photo-overlay
 								.promo-block__slider-body
 									span Verde café
-									h2 RAW VEGAN
-									p Кулинарное искусство, максимальная польза продуктов 
-										br
-										| в каждой тарелке и приятная атмосфера.
+									h2 RAW & VEGAN
+									p Кулинарное искусство, максимальная польза продуктов в каждой тарелке и приятная атмосфера.
 						.promo-block__slide
 							.promo-block__slider-wrapper
 								.promo-block__slider-photo
@@ -147,34 +137,34 @@ html(lang="ru-RU")
 									.promo-block__photo-overlay
 								.promo-block__slider-body
 									span Verde café
-									h2 RAW VEGAN
-									p Кулинарное искусство, максимальная польза продуктов 
-										br
-										| в каждой тарелке и приятная атмосфера.
-				section.about-block
-					.about-block__wrapper
-						.about-block__content
-							h3 Verde café
-							p Уникальное место, где сочетается домашняя уютная атмосфера, отзывчивый дружелюбный персонал и по–настоящему полезная вкусная еда по рецептам гуру веганской кухни США, Калифорния – Matthew Kenney. Verde café по праву входит в топ лучших веганских ресторанов города, объединяя уютный интерьер, качественный сервис, кулинарное искусство и максимальную пользу от каждого продукта.
-						.about-block__photo-block
-							img(src="static/img/about.jpg", alt="")
-				section.brandchef-block
-					.brandchef-block__heading
-						h3 Бренд–шеф
-						p Выпускница калифорнийской веганской школы Matthew Kenney - Анна Десятова. 
-							br
-							| Создатель уникальных для российского рынка продуктов, например, кокосовый кефир без содержания животного белка, йогуртов, соусов, комбучи
-					.brandchef-block__wrapper
-						.brandchef-block__photo-block
-							img(src="static/img/brandchef.jpg", alt="")
-						.brandchef-block__content
-							h3 Анна Десятова
-							p «Мы создаём не просто RawVegan еду и напитки, наша продукция - это сочетание высоких технологий и кулинарного мастерства. Мы создали продукт, который превращает выбор между традиционной и сырой живой кухней в вопрос исключительно этический. Потому что по вкусовым качествам наша сырая пища не просто не уступает традиционной, но она ярче и интереснее».
-				section.menu-block
+									h2 RAW & VEGAN
+									p Кулинарное искусство, максимальная польза продуктов в каждой тарелке и приятная атмосфера.
+				section.about-block#about
+					.wrapper
+						.about-block__wrapper
+							.about-block__content
+								h3 Verde café
+								p Уникальное место, где сочетается домашняя уютная атмосфера, отзывчивый дружелюбный персонал и по–настоящему полезная вкусная еда по рецептам гуру веганской кухни США, Калифорния – Matthew Kenney. Verde café по праву входит в топ лучших веганских ресторанов города, объединяя уютный интерьер, качественный сервис, кулинарное искусство и максимальную пользу от каждого продукта.
+							.about-block__photo-block
+								img(src="static/img/about.jpg", alt="")
+				section.brandchef-block#brandchef
+					.wrapper
+						.brandchef-block__heading
+							h3 Бренд–шеф
+							p Выпускница калифорнийской веганской школы Matthew Kenney - Анна Десятова. 
+								br
+								| Создатель уникальных для российского рынка продуктов, например, кокосовый кефир без содержания животного белка, йогуртов, соусов, комбучи
+						.brandchef-block__wrapper
+							.brandchef-block__photo-block
+								img(src="static/img/brandchef.jpg", alt="")
+							.brandchef-block__content
+								h3 Анна Десятова
+								p «Мы создаём не просто RawVegan еду и напитки, наша продукция - это сочетание высоких технологий и кулинарного мастерства. Мы создали продукт, который превращает выбор между традиционной и сырой живой кухней в вопрос исключительно этический. Потому что по вкусовым качествам наша сырая пища не просто не уступает традиционной, но она ярче и интереснее».
+				section.menu-block#menu
 					.menu-block__header
 						.menu-block__heading
 							span Меню
-							h2 Raw Vegan
+							h2 Raw & Vegan
 							p Все процессы, в которых мы можем поучаствовать и приготовить самостоятельно, включая муку, масла, хлеб, ферментированные продукты и растительное молоко, мы делаем сами
 						.menu-block__photo-block
 							img(src="static/img/menu-photo.jpg", alt="")
@@ -696,7 +686,7 @@ html(lang="ru-RU")
 												| Протеин
 												span ( raw )
 											span 300 ₽	
-				section.gallery-block
+				section.gallery-block#gallery
 					.gallery-block__fancy-block
 						a(href="static/img/gallery-photo-1.jpg" data-fancybox="gallery")
 							img(src="static/img/gallery-photo-1.jpg", alt="")
@@ -730,7 +720,7 @@ html(lang="ru-RU")
 							img(src="static/img/gallery-photo-14.jpg", alt="")
 						a(href="static/img/gallery-photo-15.jpg" data-fancybox="gallery")
 							img(src="static/img/gallery-photo-15.jpg", alt="")
-				section.delivery-block
+				section.delivery-block#delivery
 					.wrapper
 						.delivery-block__container
 							.delivery-block__heading
@@ -751,7 +741,7 @@ html(lang="ru-RU")
 						.catering-block__right-part
 							.catering-block__photo-block.catering-block__slider-two
 								img(src="static/img/gallery-photo-9.jpg", alt="")
-			footer.main-footer
+			footer.main-footer#contacts
 				.main-footer__container
 					.main-footer__contacts-block
 						.main-footer__map-block
@@ -823,6 +813,7 @@ html(lang="ru-RU")
 	//- script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&coordorder=latlong&onload=t_handleYandexApiReady_96863489")
 	script(src="static/js/jquery-3.3.1.min.js")
 	script(src="static/js/slick.min.js")
+	script(src="static/js/waypoints.min.js")
 	script(src="static/js/scroll-lock.js")
 	script(src="static/js/wow.min.js")
 	script(src="static/js/fancybox.min.js")

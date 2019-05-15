@@ -74,7 +74,12 @@ $("#menu-toggle").click(function(e) {
   e.preventDefault();
   $(this).toggleClass('active');
   $("#header-menu").toggleClass("active");
-}); 
+});
+
+$("#menu-toggle.active").click(function(e) {
+  e.preventDefault();
+  $("#header-menu").removeClass("active");
+});
 
 $('.desserts-block__slider-one').on('click', function() {
   $('#popup-dessert').toggleClass('active');
@@ -107,12 +112,6 @@ $('.popup-block__close').on('click', function() {
 $('.popup-block__close').on('click', function() {
   $('#popup-catering').removeClass('active');
 });
-
-$("#menu-toggle.active").click(function(e) {
-  e.preventDefault();
-  $("#header-menu").removeClass("active");
-});
-
 
 $('.promo-block__slider').slick({
   infinite: true,
@@ -173,7 +172,38 @@ wow = new WOW(
 )
 wow.init();
 
+var $things = $(".nav-block");
+$things.waypoint(function(e) {
+    if ("down" === e) {
+        var t = this.element.id;
+        $(".page-header__nav a").removeClass("active"), $('[data-target="#' + t + '"]').addClass("active")
+    }
+}, {
+    offset: 151
+}), 
 
-var arMapMarkers96863489 = [ { title:"Кутузовский проспект, 36 стр.4", descr:"", lat:"55.740284", lng:"37.52748", }, ];
-$(document).ready(function() { t_map_lazyload_add_map(); $(window).bind('scroll', t_throttle(t_map_lazyload_add_map, 300)); function t_map_lazyload_add_map() { var windowHeight = $(window).height(); var scrollDiffHeigth = 700; var rec = $('#rec' + 96863489); var map = rec.find('.t-map-lazyload'); if (map.length != 0) { var blockTop = map.offset().top; if ($(window).scrollTop() > blockTop - windowHeight - scrollDiffHeigth) { if (map.attr('data-maplazy-load') == 'false') { map.attr('data-maplazy-load', 'true'); t_appendYandexMap("96863489",""); } } } }
+$things.waypoint(function(e) {
+    if ("up" === e) {
+        var t = this.element.id;
+        $(window).scrollTop() < $(window).height() - 100 ? $(".page-header__nav a").removeClass("active") : ($(".page-header__nav a").removeClass("active"), $('[data-target="#' + t + '"]').addClass("active"))
+    }
+}, {
+    offset: 149
+}), 
+
+$('[data-toggle="anchor"]').click(function(e) {
+    e.preventDefault();
+    var t = $(this).attr("data-target"),
+        o = $(t).offset().top - 90;
+    $(window).width() > 767 && (o = $(t).offset().top - 150), $("#header-menu").removeClass("active"), closeModals(), $("html,body").animate({
+        scrollTop: o
+    }, 400), 
+    $(this).parent().addClass("active").siblings().removeClass("active")
+});
+
+$(".main-footer__back-link").click(function(e) {
+  e.preventDefault(),
+  $("html,body").animate({
+        scrollTop: 0
+    }, 400)
 });

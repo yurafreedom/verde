@@ -142,7 +142,7 @@
 	&__breakfast-row, &__salads-row, &__snacks-row, &__rolls-row, &__soups-row, &__dishes-row, &__desserts-row, &__bar-row {
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 	}
 	&__salads-block, &__rolls-block, &__dishes-block, &__bar-block {
 		background-color: #fbf0eb;
@@ -192,18 +192,83 @@
 	width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+	.desserts-block {
+		&__gallery-block {
+			flex-direction: column;
+			align-items: center;
+			margin-top: 0;
+		}
+		&__photo-block {
+			width: 260px;
+			height: 260px;
+		}
+	}
+	.menu-block {
+		&__heading span {
+			padding-bottom: 20px;
+		}
+		&__heading h2 {
+			font-size: 32px;
+			padding-bottom: 20px;
+		}
+		&__heading p {
+			width: 80%;
+			margin: 0 auto;
+			font-size: 16px;
+		}
+		&__salads-heading h2, &__snacks-heading h2, &__rolls-heading h2, &__soups-heading h2, &__dishes-heading h2, &__desserts-heading h2, &__bar-heading h2 {
+			padding-bottom: 20px;
+		}
+	}
+	.menu-block__bar-row, .menu-block__breakfast-row, .menu-block__desserts-row, .menu-block__dishes-row, .menu-block__rolls-row, .menu-block__salads-row, .menu-block__snacks-row, .menu-block__soups-row {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+	.menu-block__bar-card:not(:nth-child(4n)), .menu-block__breakfast-card:not(:nth-child(4n)), .menu-block__desserts-card:not(:nth-child(4n)), .menu-block__dishes-card:not(:nth-child(4n)), .menu-block__rolls-card:not(:nth-child(4n)), .menu-block__salads-card:not(:nth-child(4n)), .menu-block__snacks-card:not(:nth-child(4n)), .menu-block__soups-card:not(:nth-child(4n)) {
+		margin-right: 0;
+	}
+	.menu-block__bar-card:not(:nth-child(2n)), .menu-block__breakfast-card:not(:nth-child(2n)), .menu-block__desserts-card:not(:nth-child(2n)), .menu-block__dishes-card:not(:nth-child(2n)), .menu-block__rolls-card:not(:nth-child(2n)), .menu-block__salads-card:not(:nth-child(2n)), .menu-block__snacks-card:not(:nth-child(2n)), .menu-block__soups-card:not(:nth-child(2n)) {
+		margin-right: 0;
+	}	
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 	.desserts-block {
 		&__photo-block {
 			width: 300px;
 			height: 380px;
 		}
+		&__gallery-block {
+			margin-top: 0;
+		}
 	}
-	.menu-block__heading p {
-		width: 100%;
+	.menu-block {
+		&__heading span {
+			padding-bottom: 20px;
+		}
+		&__heading h2 {
+			font-size: 32px;
+			padding-bottom: 20px;
+		}
+		&__breakfast-title h2 {
+			font-size: 32px;
+		}
+		&__heading p {
+			width: 80%;
+			margin: 0 auto;
+			font-size: 16px;
+		}
+		&__salads-heading h2, &__snacks-heading h2, &__rolls-heading h2, &__soups-heading h2, &__dishes-heading h2, &__desserts-heading h2, &__bar-heading h2 {
+			padding-bottom: 20px;
+		}
 	}
 	.menu-block__bar-row, .menu-block__breakfast-row, .menu-block__desserts-row, .menu-block__dishes-row, .menu-block__rolls-row, .menu-block__salads-row, .menu-block__snacks-row, .menu-block__soups-row {
-		justify-content: center;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 85%;
+		margin: 0 auto;
 	}
 	.menu-block__bar-card:not(:nth-child(4n)), .menu-block__breakfast-card:not(:nth-child(4n)), .menu-block__desserts-card:not(:nth-child(4n)), .menu-block__dishes-card:not(:nth-child(4n)), .menu-block__rolls-card:not(:nth-child(4n)), .menu-block__salads-card:not(:nth-child(4n)), .menu-block__snacks-card:not(:nth-child(4n)), .menu-block__soups-card:not(:nth-child(4n)) {
 		margin-right: 0;

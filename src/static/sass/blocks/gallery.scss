@@ -20,3 +20,22 @@
 		backface-visibility: hidden;
 	}
 }
+
+@media screen and (max-width: 767px) {
+	.gallery-block {
+		&__fancy-block a {
+			width: 50%;
+		}
+		&__fancy-block a img {
+			height: 120px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.gallery-block {
+		&__fancy-block a img {
+			height: 144px;
+		}
+	}
+}

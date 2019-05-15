@@ -48,7 +48,7 @@
 	&__slider-body h2 {
 		display: block;
 		text-align: center;
-		font-family: 'OrchideaPro', sans-serif;
+		font-family: "Playfair Display", sans-serif;
 		font-size: 82px;
 		line-height: 1.23;
 		font-weight: 100;
@@ -142,5 +142,47 @@
 	}
 	.slick-dots li button:before {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.promo-block {
+		&__slider-body {
+			top: 80px;
+		}
+		&__slider-photo {
+			height: 400px;
+		}
+		&__slider-body h2 {
+			font-size: 26px;
+		}
+		&__slider-body span {
+			font-size: 21px;
+		}
+		&__slider-body p {
+			font-size: 16px;
+		}
+		&__arrow.next, &__arrow.prev {
+			top: 200px;
+		}
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+	.promo-block {
+		&__slider-body {
+			top: 50px;
+		}
+		&__slider-body h2 {
+			font-size: 21px;
+		}		
+	}	
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.promo-block {
+		&__slider-body h2 {
+			font-size: 44px;
+		}
 	}
 }
