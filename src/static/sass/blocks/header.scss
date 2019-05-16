@@ -260,7 +260,7 @@ body {
 }
 
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
 	body {
 		padding-top: 64px;
 	}
@@ -390,6 +390,12 @@ body {
 		opacity: 1;
 		pointer-events: all;
 		transform: translateX(0);
+	}
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+	.page-header__toggle {
+		right: 0;
 	}
 }
 
